@@ -1,0 +1,24 @@
+<%layout('layout/boilerplate')%>
+<form method="POST" action="/notes" class="validated-form"  novalidate>
+  <div class="mb-3">
+    <label for="Title" class="form-label">Title</label>
+    <input type="text" class="form-control" id="Title" required name="title" >
+    <div class="valid-feedback"> 
+      Looks Good
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label" >Description</label>
+    
+    <textarea class="form-control" id="description" name="description"  required aria-label="With textarea"></textarea>
+    <div class="valid-feedback"> 
+      Looks Good
+    </div>
+
+  </div>    
+</div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script src="/js/validateForms.js"></script> 
+

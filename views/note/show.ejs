@@ -1,0 +1,15 @@
+<%layout('layout/boilerplate')%>
+<div class="row  d-flex  justify-content-center"> 
+    <div class="col-6"> 
+        <div class="card mb-3">
+            <div class="card-body ">
+                <h5 class="card-title"><%=note.title%></h5>
+                <p class="card-text"><%=note.description%></p>
+                 <a href="/note/<%=note._id%>/edit" class="btn btn-primary text-left">Edit Note</a> 
+                <form class="d-inline" action="/note/<%=note._id%>?_method=DELETE" method="POST"> 
+                    <button class="btn btn-danger">DELETE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 

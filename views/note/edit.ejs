@@ -1,0 +1,16 @@
+<%layout('layout/boilerplate')%>
+<form  action="/notes/<%=note._id%>?_method=PUT" method="POST">
+    <div class="mb-3">
+      <label for="Title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="Title" name="title" value="<%=note.title%>">
+     
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      
+      <textarea class="form-control" id="description" name="description" aria-label="With textarea"><%=note.description%></textarea>
+        </div>    
+  </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
